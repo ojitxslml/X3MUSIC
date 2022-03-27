@@ -30,12 +30,34 @@
         <li class="menu__accesorios">
           <a href="accesorios.html">Accesorios</a>
         </li>
-        <li class="menu__login"><a href="#">Login</a></li>
-        <li class="menu__registro"><a href="#">Registro</a></li>
+        <li class="menu__login"><a href="#" id="btnLogin">Login</a></li>
+        <li class="menu__registro">
+          <a href="#">Registro</a>
+        </li>
       </ul>
     </nav>
   </head>
   <body>
+    <div id="modalLogin" class="modalLogin">
+      <div class="modalLogin-content">
+        <form action="" method="get" class="formLogin">
+          <h2>Login</h2>
+          <input
+            type="text"
+            name="logCorreo"
+            id="logCorreo"
+            placeholder="Correo"
+          />
+          <input
+            type="password"
+            name="logPass"
+            id="logPass"
+            placeholder="Contraseña"
+          />
+          <button id="btnIniciar">Iniciar</button>
+        </form>
+      </div>
+    </div>
     <main>
       <div class="novedades">
         <h2>NOVEDADES</h2>
@@ -148,5 +170,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/register.js"></script>
   </body>
 </html>
