@@ -7,11 +7,13 @@ const modal = document.getElementById("modalLogin");
 const btn = document.getElementById("btnLogin");
 
 const btnIniciar = document.getElementById("btnIniciar");
-
+const btn_menu = document.querySelector('.btn_menu');
+const ul = document.querySelector('ul');
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
   console.log("hola");
+  ul.classList.toggle('show')
 }
 
 btnIniciar.onclick = () =>{
@@ -27,10 +29,10 @@ window.onclick = function(event) {
 }
 
 addEventListener('DOMContentLoaded', () => {
-  const btn_menu = document.querySelector('.btn_menu')
+  
   if(btn_menu){
     btn_menu.addEventListener('click', () => {
-    const ul = document.querySelector('ul')
+    
     ul.classList.toggle('show')
   })
  }

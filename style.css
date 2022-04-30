@@ -299,7 +299,7 @@
   .modalLogin-content {
     background-color: #fefefe;
     margin: 10% auto; /* 15% from the top and centered */
-    width: 20%; /* Could be more or less, depending on screen size */
+    width: 25%; /* Could be more or less, depending on screen size */
     padding: 2rem 2rem 5rem 2rem;
     border: 3px solid var(--Light-blue);
     border-radius: 2rem;
@@ -652,7 +652,7 @@
   .modalLogin-content {
     background-color: #fefefe;
     margin: 10% auto; /* 15% from the top and centered */
-    width: 20%; /* Could be more or less, depending on screen size */
+    width: 80%; /* Could be more or less, depending on screen size */
     padding: 2rem 2rem 5rem 2rem;
     border: 3px solid var(--Light-blue);
     border-radius: 2rem;
@@ -675,7 +675,7 @@
     background-color: var(--Gris);
     font-size: 28px;
     padding-left: 10px;
-    width: 60%;
+    width: 100%;
   }
 
   .formLogin input::placeholder {
