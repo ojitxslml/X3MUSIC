@@ -350,7 +350,7 @@
 
   nav {
     background-color: var(--Light-blue);
-    padding: 1rem 15rem;
+    padding: 1rem 100vw;
     display: flex;
     justify-content: center;
   }
