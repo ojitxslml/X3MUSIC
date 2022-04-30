@@ -368,10 +368,11 @@
     trasition: all 0.4s;
     flex-direction: column;
     z-index: 2;
+    overflow: scroll;
   }
 
   ul.show {
-    top: 65px;
+    top: 60px;
   }
 
   li {
