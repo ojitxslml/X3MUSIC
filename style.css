@@ -23,7 +23,7 @@
   }
 
   .btn_menu {
-    visibility: hidden;
+    display: none;
   }
 
   ul {
@@ -350,14 +350,14 @@
 
   nav {
     background-color: var(--Light-blue);
-    padding: 1rem 100vw;
+    padding: 1rem 10rem;
     display: flex;
     justify-content: center;
   }
 
   ul {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     list-style-type: none;
     position: fixed;
     width: 100vw;
@@ -367,6 +367,11 @@
     text-align: center;
     trasition: all 0.4s;
     flex-direction: column;
+    z-index: 2;
+  }
+
+  ul.show {
+    top: 65px;
   }
 
   li {
@@ -384,7 +389,6 @@
 
   .btn_menu {
     display: inline-flex;
-    visibility: visible;
     font-size: 30px;
     align-items: center;
     margin-left: 4rem;

@@ -25,3 +25,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+addEventListener('DOMContentLoaded', () => {
+  const btn_menu = document.querySelector('.btn_menu')
+  if(btn_menu){
+    btn_menu.addEventListener('click', () => {
+    const ul = document.querySelector('ul')
+    ul.classList.toggle('show')
+  })
+ }
+})
