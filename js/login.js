@@ -7,8 +7,7 @@ const modal = document.getElementById("modalLogin");
 const btn = document.getElementById("btnLogin");
 
 const btnIniciar = document.getElementById("btnIniciar");
-const btn_menu = document.querySelector('.btn_menu');
-const ul = document.querySelector('ul');
+
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
@@ -28,12 +27,3 @@ window.onclick = function(event) {
   }
 }
 
-addEventListener('DOMContentLoaded', () => {
-  
-  if(btn_menu){
-    btn_menu.addEventListener('click', () => {
-    
-    ul.classList.toggle('show')
-  })
- }
-})
