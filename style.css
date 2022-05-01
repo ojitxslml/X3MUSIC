@@ -362,7 +362,7 @@
     position: fixed;
     width: 100vw;
     height: calc(100% - 1rem);
-    background: gray;
+    background: hsla(183, 100%, 93%, 0.95);
     top: -300vh;
     text-align: center;
     trasition: all 0.4s;
