@@ -4,7 +4,6 @@ addEventListener('DOMContentLoaded', () => {
 
     if(btn_menu){
       btn_menu.addEventListener('click', () => {
-      
       ul.classList.toggle('show')
     })
    }
