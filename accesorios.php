@@ -20,22 +20,36 @@
     <link rel="stylesheet" href="style.css" />
     <nav class="menu">
       <div class="menu__logo">
-        <a href="index.html"><img src="img/logo.png" alt="" /></a>
-        <a href="index.html" class="logo"><h1>X3Music</h1></a>
+        <a href="index.php"><img src="img/logo.png" alt="" /></a>
+        <a href="index.php" class="logo"><h1>X3Music</h1></a>
       </div>
       <ul>
         <li class="menu__home">
-          <a href="index.html">Home</a>
+          <a href="index.php">Home</a>
         </li>
-        <li class="menu__musica"><a href="musica.html">Música</a></li>
-        <li class="menu__ropa"><a href="ropa.html">Ropa</a></li>
+        <li class="menu__musica"><a href="musica.php">Música</a></li>
+        <li class="menu__ropa"><a href="ropa.php">Ropa</a></li>
         <li class="menu__accesorios menuSelected">
-          <a href="accesorios.html">Accesorios</a>
+          <a href="accesorios.php">Accesorios</a>
         </li>
-        <li class="menu__login"><a href="#" id="btnLogin">Login</a></li>
+        <?php  if(!isset($_SESSION["user"])):?>
+          <li class="dropdown">
+      <button class="dropbtn"><i class="lni lni-user"></i></button>
+      <div class="dropdown-content">
+      <a href="#"><i class="lni lni-user"></i>  Mi perfil</a>
+      <a href="#"><i class="lni lni-shopping-basket"></i>  Carrito</a>
+      <a href="#"><i class="lni lni-list"></i>  Mis compras</a>
+      <a href="#"><i class="lni lni-exit"></i>  Cerrar Sesión</a>
+      </div>
+      </li>
+      <?php endif; ?>
+
+<?php  if(!isset($_SESSION["user"])):?>
+  <li class="menu__login"><a href="#" id="btnLogin">Login</a></li>
         <li class="menu__registro">
           <a href="#" id="btnRegistro">Registro</a>
         </li>
+<?php endif; ?>
       </ul>
       <span class="btn_menu"><i class="lni lni-menu"></i></span>
     </nav>
